@@ -15,7 +15,8 @@ const forecast = (lat, long, callback) => {
         else{
             callback(undefined, current.weather_descriptions[0] + ". It is " +
                 current.temperature + " degrees out. It feels like " + 
-                current.feelslike + " degrees.");
+                current.feelslike + " degrees. The wind is blowing at " + current.wind_speed +
+                " MPH to the " + current.wind_dir + " .There is " + current.humidity + " percent humidity.");
         }
     });
 }
